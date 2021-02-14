@@ -3,6 +3,7 @@ package com.consul.gateway;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+//import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableDiscoveryClient//此注解将自动发现服务并注册服务
 @RestController
 @Configuration
+//@EnableEurekaClient //申明这是一个Eureka服务 test
 public class ConsulGatewayStart {
     public static void main(String[] args) {
         //配置文件路由 映射 到 Mapped to ResourceWebHandler
